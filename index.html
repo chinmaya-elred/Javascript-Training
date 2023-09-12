@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript (Very) Basics</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/buttonClicked.js" defer></script>
+    <script src="scripts/calculator.js" defer></script>
+    <script src="scripts/todo.js" defer></script>
+</head>
+
+<body>
+    <div id="backdrop"></div>
+    <header id="main-header">
+        <h1>Welcome to this "JavaScript - The Complete Guide" Course!</h1>
+    </header>
+    <main>
+        <section id="about-this-course">
+            <header>
+                <h2>About this Course</h2>
+            </header>
+            <article>
+                <h2>What is JavaScript?</h2>
+                <p>
+                    JavaScript is a
+
+                    <a href="#" class="info-modal"
+                        data-text="JavaScript is a dynamic, interpreted and weakly typed programming language which was built with the purpose of running in host environments (e.g. inside of a webpage in the browser).">dynamic,
+                        interpreted</a>
+                    and
+                    <a href="#" class="info-modal"
+                        data-text="Weakly typed means that variables in JavaScript are not bound to a specific data type, and their types can change during runtime.">weakly
+                        typed</a>
+                    programming language which was built with the purpose of running in
+                    host environments (e.g. inside of a webpage in the browser).
+                </p>
+
+                <p>
+                    It's part of pretty much any page you visit in the web as it's the
+                    only "thing" in web development that allows you (= the developer) to
+                    change something on the page at runtime. Basically everytime
+                    something opens, closes, moves or changes on a webpage, JavaScript
+                    will be involved.
+                </p>
+                <p>
+                    There also a lot of webpages which are almost entirely powered by
+                    JavaScript (i.e. where a lot of the rendering work happens in the
+                    browser) - those pages typically use frameworks like Angular, but
+                    that's a topic we'll cover later in the course. :-)
+                </p>
+            </article>
+
+            <div>
+                <button onclick="showAlert()">Click Me</button>
+            </div>
+
+    </main>
+
+    <main>
+        <h1>Simple Calculator</h1>
+        <input type="number" id="num1" placeholder="Enter number 1">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="num2" placeholder="Enter number 2">
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
+    </main>
+
+    <main>
+        <h1>To-Do List</h1>
+        <input type="text" id="task" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </main>
+</body>
+
+</html>
