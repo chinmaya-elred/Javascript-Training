@@ -212,7 +212,7 @@ li button {
     cursor: pointer;
 }
 
-.modal {
+.modalObject {
   display: none;
   position: fixed;
   z-index: 1;
@@ -226,7 +226,7 @@ li button {
   padding-top: 60px;
 }
 
-.modal-content {
+.modalObject-content {
   background-color: #fefefe;
   margin: 5% auto;
   padding: 20px;
