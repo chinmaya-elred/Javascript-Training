@@ -15,6 +15,11 @@
     <script src="scripts/todo.js" defer></script>
     <script src="scripts/objeect.js" defer></script>
     <script src="scripts/array.js" defer></script>
+    <script src="scripts/precedence.js" defer></script>
+    <script src="scripts/grade.js" defer></script>
+    <script src="scripts/ternaryOpearator.js" defer></script>
+    <script src="scripts/weekday.js" defer></script>
+    <script src="scripts/forloop.js" defer></script>
 </head>
 
 <body>
@@ -106,6 +111,42 @@
     <main>
         <h1>Array Example</h1>
         <button onclick="showFruits()">Click Me</button>
+    </main>
+
+    <h1 style="background: red; padding: 25px 25px;">Section 4 Examples</h1>
+
+    <main>
+        <h1>Operator Precedence Example</h1>
+        <button onclick="showPrecedence()">Click Me</button>
+    </main>
+
+    <main>
+        <label for="score">Enter your score:</label>
+        <input type="number" id="score" min="0" max="100">
+        <button onclick="calculateGrade()">Calculate Grade</button>
+        <p id="resultGrade"></p>
+    </main>
+
+    <main style="display: flex; flex-direction: column;">
+        <h1>Ternary Operator Example</h1>
+        <h1>Voting Age Checker</h1>
+        <label for="ageInput">Enter your age:</label>
+        <input type="number" id="ageInput">
+        <button onclick="checkVotingAge()">Check</button>
+        <div id="resultAge"></div>
+    </main>
+
+    <main style="display: flex; flex-direction: column;">
+        <h1>Switch Case Example</h1>
+        <label for="dayInput">Enter a day (0-6): </label>
+        <input type="number" id="dayInput" min="0" max="6">
+        <button onclick="getDayGreeting()">Get Greeting</button>
+        <div id="output"></div>
+    </main>
+
+    <main>
+        <h1>For Loop Case Example</h1>
+        <div id="outputFor"></div>
     </main>
 </body>
 
