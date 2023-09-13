@@ -32,3 +32,14 @@ for (const linkElement of modalLinkElements) {
 }
 
 backdropElement.addEventListener('click', hideInfoModal);
+
+
+function doubleValue(input) {
+    return input * 2;
+}
+
+function handleButtonClick() {
+    var inputValue = document.getElementById('inputValue').value;
+    var doubledValue = doubleValue(inputValue);
+    alert('The doubled value is: ' + doubledValue);
+}

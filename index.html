@@ -13,6 +13,8 @@
     <script src="scripts/buttonClicked.js" defer></script>
     <script src="scripts/calculator.js" defer></script>
     <script src="scripts/todo.js" defer></script>
+    <script src="scripts/objeect.js" defer></script>
+    <script src="scripts/array.js" defer></script>
 </head>
 
 <body>
@@ -81,6 +83,29 @@
         <input type="text" id="task" placeholder="Enter a task">
         <button onclick="addTask()">Add Task</button>
         <ul id="taskList"></ul>
+    </main>
+
+    <main>
+        <h1>Double Value Example</h1>
+        <label for="inputValue">Enter a value:</label>
+        <input type="number" id="inputValue">
+        <button onclick="handleButtonClick()">Double Value</button>
+    </main>
+
+    <main>
+        <h1>Object Example</h1>
+        <button onclick="showModal()">Click Me</button>
+        <div id="userModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="userDetails"></div>
+            </div>
+        </div>
+    </main>
+
+    <main>
+        <h1>Array Example</h1>
+        <button onclick="showFruits()">Click Me</button>
     </main>
 </body>
 
