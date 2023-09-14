@@ -146,7 +146,6 @@ const overlayClickHandler = () => {
   clearMovieInput();
 };
 
-startAddMovieButton.addEventListener('click', showMovieContainer);
 overlay.addEventListener('click', overlayClickHandler);
 cancelAddMovieButton.addEventListener('click', cancelAddMovieHandler);
 confirmAddMovieButton.addEventListener('click', addMovieHandler);

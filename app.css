@@ -441,7 +441,7 @@ input:focus {
 }
 
 #movie-ul {
-  list-style: none;
+  /* list-style: none; */
   width: 40rem;
   max-width: 90%;
   margin: 1rem auto;
