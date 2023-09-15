@@ -8,12 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
             outputDiv.appendChild(newElement);
             
             if (i === 5) {
-                showAlert();
+                // showAlert();
             }
         }, i * 1000);
     }
     
-    function showAlert() {
-        alert("Numbers 1 to 5 have been displayed!");
-    }
 });
