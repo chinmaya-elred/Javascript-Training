@@ -109,6 +109,42 @@ function arrayDestructuring() {
     alert(`a: ${a}, b: ${b}, c: ${c}`);
 }
 
+
+function operateWithSets() {
+    let outputDiv = document.getElementById('outputSetMap');
+
+    let mySet = new Set([1, 2, 3, 4, 5]);
+    mySet.add(6);
+    mySet.add(7);
+    let containsThree = mySet.has(3);
+    mySet.delete(4);
+
+    outputDiv.innerHTML = `
+        <p>Set: ${[...mySet]}</p>
+        <p>Does the set contain 3? ${containsThree}</p>
+    `;
+}
+
+function operateWithMaps() {
+    let outputDiv = document.getElementById('outputSetMap');
+
+    let myMap = new Map();
+    myMap.set('name', 'John Doe');
+    myMap.set('age', 30);
+    let name = myMap.get('name');
+    let age = myMap.get('age');
+    let hasEmail = myMap.has('email');
+    myMap.delete('age');
+
+    outputDiv.innerHTML = `
+        <p>Map:</p>
+        <ul>
+            <li>Name: ${name}</li>
+            <li>Age: ${age}</li>
+        </ul>
+    `;
+}
+
 function updateDisplay() {
     document.getElementById("resultArrayMethods").innerHTML = "<h2>Updated Array: " + myArray + "</h2>";
 }
