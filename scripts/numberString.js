@@ -27,3 +27,15 @@ document.getElementById('stringButton').addEventListener('click', function() {
 });
 
 
+document.getElementById('regexButton').addEventListener('click', function() {
+    const userInput = document.getElementById('textInput').value;
+    const pattern = /[0-9]+/g; // Regular expression to match one or more digits
+
+    const matches = userInput.match(pattern);
+
+    if (matches) {
+        document.getElementById('outputRegex').textContent = `Matches: ${matches.join(', ')}`;
+    } else {
+        document.getElementById('outputRegex').textContent = 'No matches found.';
+    }
+});
