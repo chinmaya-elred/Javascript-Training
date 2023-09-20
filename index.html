@@ -34,6 +34,12 @@
     <script src="scripts/location.js" defer></script>
     <script src="scripts/navigator.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/dragEvent.js" defer></script>
+    <script src="scripts/pureFunction.js" defer></script>
+    <script src="scripts/clouser.js" defer></script>
+    <script src="scripts/numberString.js" defer></script>
+
 </head>
 
 <body>
@@ -356,6 +362,48 @@
         <h1>Date Example</h1>
         <button id="dateButton">Click to See Date Methods</button>
     </main>
+
+    <main style="display: flex; flex-direction: column;">
+        <h1>Events Examples</h1>
+
+        <button id="myButton">Click me</button>
+        <div id="myElement" class="hover-div">Hover over me</div>
+        <form id="myForm">
+            <input type="text" id="myInput" placeholder="Type something">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <main>
+        <div id="draggableElement" class="draggable" draggable="true">
+            Drag me
+        </div>
+
+        <div id="dropTarget" style="width: 300px; height: 300px; border: 2px dashed black; margin: 20px;">
+            Drop here
+        </div>
+    </main>
+
+    <main>
+        <h1>Pure Function Example</h1>
+        <button id="pureFunction">Calculate Sum</button>
+        <h1 id="resultPure"></h1>
+    </main>
+
+    <main>
+        <h1>Clouser Example</h1>
+        <button id="incrementButton">Increment Counter</button>
+        <h1 id="counter">0</h1>
+    </main>
+
+    <main>
+        <h1>Numbers and String Example</h1>
+        <button id="numberButton">Number Operations</button>
+        <button id="stringButton">String Operations</button>
+        <div id="numberString"></div>
+    </main>
+
+
 </body>
 
 </html>
