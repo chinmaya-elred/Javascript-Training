@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="app.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="scripts/index.js" defer></script>
     <script src="scripts/buttonClicked.js" defer></script>
     <script src="scripts/calculator.js" defer></script>
@@ -40,6 +42,9 @@
     <script src="scripts/clouser.js" defer></script>
     <script src="scripts/numberString.js" defer></script>
     <script src="scripts/promises.js" defer></script>
+    <script src="scripts/http.js" defer></script>
+    <script src="scripts/lodash.js" defer></script>
+    <script src="scripts/axios.js" defer></script>
 </head>
 
 <body>
@@ -420,6 +425,44 @@
         <h1>Async Await Example</h1>
         <button id="getUserButton">Get User Data</button>
         <div id="outputAsyncAwait"></div>
+    </main>
+
+    <main>
+        <template id="single-post">
+            <li class="post-item">
+                <h2></h2>
+                <p></p>
+                <button>DELETE</button>
+            </li>
+        </template>
+
+        <section id="new-post">
+            <form>
+                <div class="form-control">
+                    <label for="title">Title</label>
+                    <input type="text" id="titleHTTP" />
+                </div>
+                <div class="form-control">
+                    <label for="content">Content</label>
+                    <textarea rows="3" id="contentHTTP"></textarea>
+                </div>
+                <button type="submit">ADD</button>
+            </form>
+        </section>
+        <section id="available-posts">
+            <button>FETCH POSTS</button>
+            <ul class="posts"></ul>
+        </section>
+    </main>
+
+    <main>
+        <h1>Lodash Example</h1>
+        <button id="clickMe">Click Me</button>
+    </main>
+
+    <main>
+        <h1>Axios Example</h1>
+        <button id="fetchData">Fetch Data</button>
     </main>
 </body>
 
