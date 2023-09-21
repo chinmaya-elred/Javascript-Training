@@ -1,4 +1,4 @@
-document.getElementById('fetchData').addEventListener('click', function() {
+document.getElementById('fetchDataButton').addEventListener('click', function() {
     axios.get('https://jsonplaceholder.typicode.com/posts')
       .then(function(response) {
         // Handle the successful response here

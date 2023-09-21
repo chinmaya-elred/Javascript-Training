@@ -44,7 +44,11 @@
     <script src="scripts/promises.js" defer></script>
     <script src="scripts/http.js" defer></script>
     <script src="scripts/lodash.js" defer></script>
+    <script src="scripts/components/axiosComponent.js" defer type="module"></script>
     <script src="scripts/axios.js" defer></script>
+    <script src="scripts/localStorage.js" defer></script>
+    <script src="scripts/sessionStorage.js" defer></script>
+    <script src="scripts/cookie.js" defer></script>
 </head>
 
 <body>
@@ -462,7 +466,25 @@
 
     <main>
         <h1>Axios Example</h1>
-        <button id="fetchData">Fetch Data</button>
+        <button id="fetchDataButton">Fetch Data</button>
+    </main>
+ 
+    <main>
+        <h1>LocalStorage Example</h1>
+        <button id="saveButton">Save Data</button>
+        <button id="retrieveButton">Retrieve Data</button>
+    </main>
+
+    <main>
+        <h1>sessionStorage Example</h1>
+        <button id="saveButtonSession">Save Data</button>
+        <button id="retrieveButtonSession">Retrieve Data</button>
+    </main>
+
+    <main>
+        <h1>Cookie Example</h1>
+        <button id="saveButtonCookie">Save Data</button>
+        <button id="retrieveButtonCookie">Retrieve Data</button>
     </main>
 </body>
 
