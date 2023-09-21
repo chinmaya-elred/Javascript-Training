@@ -15,7 +15,7 @@ document.getElementById('saveButtonCookie').addEventListener('click', function()
     const data = prompt('Enter data to save:');
     
     if (data !== null && data.trim() !== '') {
-        setCookie('savedData', data, 7); 
+        setCookie('savedData', data, 7); E
         alert('Data saved successfully!');
     }
 });
