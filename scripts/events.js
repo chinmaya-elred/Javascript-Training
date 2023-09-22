@@ -16,7 +16,7 @@ document.addEventListener('keydown', function(event) {
 });
 
 window.addEventListener('load', function() {
-    alert('Page loaded!');
+    // alert('Page loaded!');
 });
 
 document.getElementById('myInput').addEventListener('change', function() {

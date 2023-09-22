@@ -259,15 +259,17 @@ li button {
 #resultAge {
   color: #ff0055;
 }
-#outputFor{
+
+#outputFor {
   background-color: #ffc6d9;
-  color:#4CAF50;
+  color: #4CAF50;
   width: 50%;
   height: 250px;
   padding: 25px;
   margin-left: 25px;
 }
-#formOutput{
+
+#formOutput {
   background-color: #ffc6d9;
   color: #ff0055;
   width: 20%;
@@ -469,7 +471,23 @@ input:focus {
   display: flex;
   flex-direction: column;
 }
-#outputAsyncAwait{
+
+#outputAsyncAwait {
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+#openMapButton {
+  margin-right: 10px;
+}
+
+#mapContainer {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
 }
