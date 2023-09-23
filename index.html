@@ -58,6 +58,9 @@
     <script src="scripts/proxy.js" defer></script>
     <script src="scripts/shopCart.js" defer></script>
     <script src="scripts/math.js" defer></script>
+    <script src="scripts/procedural.js" defer></script>
+    <script src="scripts/objectOriented.js" defer></script>
+    <script src="scripts/functionalProgramming.js" defer></script>
 </head>
 
 <body>
@@ -521,7 +524,7 @@
         <h1>Iterator Example</h1>
         <button id="myButtonIterator">Click Me</button>
     </main>
-   
+
     <main>
         <h1>Generator Example</h1>
         <button id="myButtonGenerator">Click Me</button>
@@ -544,6 +547,31 @@
         </div>
     </main>
 
+    <main>
+        <h1>Procedural JavaScript Example</h1>
+        <button id="clickButton">Click Me</button>
+        <div id="outputProcedural"></div>
+    </main>
+
+    <main>
+        <h1>Object-Oriented JavaScript Example</h1>
+        <button id="incrementButton1">Increment</button>
+        <button id="decrementButton">Decrement</button>
+        <div id="counterDisplay">0</div>
+    </main>
+
+    <main  style="display: flex; flex-direction: column;">
+        <h1>Functional Programming JavaScript Example</h1>
+        <form id="addProductForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required>
+            <label for="productPrice">Price:</label>
+            <input type="number" id="productPrice" min="0" step="0.01" required>
+            <button type="submit">Add Product</button>
+        </form>
+        <ul id="productList"></ul>
+        <div id="totalPrice">Total Price: $0.00</div>
+    </main>
 </body>
 
 </html>
