@@ -61,6 +61,7 @@
     <script src="scripts/procedural.js" defer></script>
     <script src="scripts/objectOriented.js" defer></script>
     <script src="scripts/functionalProgramming.js" defer></script>
+    <script src="scripts/timeComplexity.js" defer></script>
 </head>
 
 <body>
@@ -560,7 +561,7 @@
         <div id="counterDisplay">0</div>
     </main>
 
-    <main  style="display: flex; flex-direction: column;">
+    <main style="display: flex; flex-direction: column;">
         <h1>Functional Programming JavaScript Example</h1>
         <form id="addProductForm">
             <label for="productName">Product Name:</label>
@@ -571,6 +572,15 @@
         </form>
         <ul id="productList"></ul>
         <div id="totalPrice">Total Price: $0.00</div>
+    </main>
+
+    <main>
+        <h1>Time Complexity Example</h1>
+        <button id="searchButton">Search Element</button>
+        <div>
+            <input type="text" id="searchInput" placeholder="Enter element to search">
+        </div>
+        <div id="resultComplexity"></div>
     </main>
 </body>
 
