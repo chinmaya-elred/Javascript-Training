@@ -601,8 +601,16 @@
         </p>
         <uc-tooltip>Here we go!</uc-tooltip>
         <script src="scripts/tooltip.js" defer></script>
+    </main>
 
-
+    <main style="display: flex; flex-direction: column;">
+        <p>
+            <uc-tooltip text="Web Components is a set of standards.">Web Components</uc-tooltip>
+            are awesome!
+        </p>
+        <uc-tooltip></uc-tooltip>
+        <div>This does not get the web component styles!</div>
+        <a is="uc-confirm-link" href="https://www.google.com">Google</a>
     </main>
 </body>
 
