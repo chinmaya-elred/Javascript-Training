@@ -62,6 +62,9 @@
     <script src="scripts/objectOriented.js" defer></script>
     <script src="scripts/functionalProgramming.js" defer></script>
     <script src="scripts/timeComplexity.js" defer></script>
+    <script src="scripts/tooltip.js"></script>
+    <script src="typeScriptExample.js"></script>
+
 </head>
 
 <body>
@@ -581,6 +584,25 @@
             <input type="text" id="searchInput" placeholder="Enter element to search">
         </div>
         <div id="resultComplexity"></div>
+    </main>
+
+    <main>
+        <h1>Typescript Example</h1>
+        <input type="number" id="num1Typescript">
+        <input type="text" id="num2Typescript">
+        <button>Add</button>
+    </main>
+
+    <main style="display: flex; flex-direction: column;">
+        <h1>Web components</h1>
+        <p>
+            <uc-tooltip text="Web Components is a set of standards.">Web Components</uc-tooltip>
+            are awesome!
+        </p>
+        <uc-tooltip>Here we go!</uc-tooltip>
+        <script src="scripts/tooltip.js" defer></script>
+
+
     </main>
 </body>
 
