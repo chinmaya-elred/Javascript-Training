@@ -64,6 +64,7 @@
     <script src="scripts/timeComplexity.js" defer></script>
     <script src="scripts/tooltip.js"></script>
     <script src="typeScriptExample.js"></script>
+    <script src="scripts/modal.js"></script>
 
 </head>
 
@@ -612,6 +613,35 @@
         <div>This does not get the web component styles!</div>
         <a is="uc-confirm-link" href="https://www.google.com">Google</a>
     </main>
+    <main>
+        <uc-custom-modal>
+            <h1 slot="custom-title">Please Confirm</h1>
+            <p>With your confirmation you agree to pay the full amount!</p>
+        </uc-custom-modal>
+        <p>Please confirm your choice.</p>
+        <button>Show Details & Confirm</button>
+        <script>
+            const confirmButton = document.querySelector('button');
+            const customModal = document.querySelector('uc-custom-modal');
+    
+            customModal.addEventListener('confirm', () => {
+                console.log('Confirmed...');
+            });
+    
+            customModal.addEventListener('cancel', () => {
+                console.log('Cancelled...');
+            });
+    
+            confirmButton.addEventListener('click', () => {
+                console.log(customModal.isOpen)
+                if (!customModal.isOpen) {
+                    customModal.open();
+                    console.log('Opening...');
+                }
+            });
+        </script>
+    </main>
+    
 </body>
 
 </html>
